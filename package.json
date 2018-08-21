@@ -1,0 +1,30 @@
+{
+  "name": "baiyangwang",
+  "version": "1.0.0",
+  "description": "百洋健康商城",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp-babel": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowencong/baiyangwang.git"
+  },
+  "author": "mowencong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mowencong/baiyangwang/issues"
+  },
+  "homepage": "https://github.com/mowencong/baiyangwang#readme"
+}
