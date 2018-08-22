@@ -1,0 +1,77 @@
+#login { width: 100%; min-width: 1030px; }
+
+#login .container { width: 1030px; }
+
+#login #top { width: 100%; }
+
+#login #top .top-l h1 { width: 220px; height: 60px; background: url(../img/logo.png) no-repeat; text-indent: -10000px; margin-top: 20px; }
+
+#login #top .top-r { font-size: 14px; color: #AAA; line-height: 20px; float: right; height: 40px; margin-top: 30px; }
+
+#login #top .top-r a { color: #EF3CA2; text-decoration: none; }
+
+#login #top .top-r span:nth-child(1) { width: 40px; height: 40px; margin-right: 6px; border-radius: 100%; }
+
+#login #top .top-r span:nth-child(2) { vertical-align: top; display: inline-block; }
+
+#login #main { height: 700px; background: #FAFAFA; background-position: 200px; }
+
+#login #main .dl-main { margin: 0 auto; }
+
+#login #main .dl-main .x { width: 100%; border: 1px solid #F5F5F5; margin-top: 20px; }
+
+#login #main .dl-main .main-img { width: 450px; height: 350px; background: url(../img/1.jpg) no-repeat; margin-top: 50px; }
+
+#login #main .dl-main .main-dl { width: 480px; height: 410px; border: 1px solid #ccc; border-radius: 5px; background: #fff; margin-top: 25px; }
+
+#login #main .dl-main .main-dl .fs { margin: 0 18px; border-bottom: 1px solid #ccc; margin-bottom: 30px; }
+
+#login #main .dl-main .main-dl .fs p { display: inline-block; height: 60px; width: 210px; line-height: 60px; text-align: center; margin: 0; font-size: 20px; }
+
+#login #main .dl-main .main-dl .fs p:nth-child(1) { color: #f00; }
+
+#login #main .dl-main .main-dl .fs .sj { position: relative; width: 210px; border: 2px solid #EF3C79; }
+
+#login #main .dl-main .main-dl .fs .sj1 { position: absolute; width: 0; height: 0; top: 2px; left: 50%; border: 8px solid transparent; border-top-color: #f00; }
+
+#login #main .dl-main .main-dl .form { width: 350px; margin-top: 30px; margin: 0 auto; }
+
+#login #main .dl-main .main-dl .form .tell { position: relative; width: 350px; height: 55px; border: 1px solid #ccc; line-height: 50px; font-size: 16px; }
+
+#login #main .dl-main .main-dl .form .success { border: 1px solid #58bc58; }
+
+#login #main .dl-main .main-dl .form .error { border: 1px solid #f00; }
+
+#login #main .dl-main .main-dl .form .code { position: relative; margin-top: 15px; }
+
+#login #main .dl-main .main-dl .form .code #udcode { position: absolute; width: 100px; height: 55px; display: block; background: #f00; right: 0; top: -2px; text-decoration: none; color: #fff; text-align: center; line-height: 55px; font-size: 20px; }
+
+#login #main .dl-main .main-dl .form .code #udcode .huan { position: absolute; top: 0; border: 1px solid #ccc; width: 100px; height: 55px; display: block; opacity: 0.8; font-size: 12px; color: #ccc; }
+
+#login #main .dl-main .main-dl .form .code #udcode:hover .huan { display: block; }
+
+#login #main .dl-main .main-dl .form .code .fault { position: absolute; left: 210px; color: #f00; line-height: 50px; display: none; }
+
+#login #main .dl-main .main-dl .form .code .right { position: absolute; left: 210px; color: #58bc58; line-height: 50px; display: none; }
+
+#login #main .dl-main .main-dl .form .check { border: none; }
+
+#login #main .dl-main .main-dl .form .check span { margin-left: 160px; }
+
+#login #main .dl-main .main-dl .form .lg { border: none; }
+
+#login #main .dl-main .main-dl .form .lg input { width: 350px; height: 55px; text-align: center; border: 1px solid #ccc; background: #EF3C79; color: #fff; }
+
+#login #main .dl-main .main-dl .form .usernames input { width: 290px; }
+
+#login #main .dl-main .main-dl .form .passwords input { width: 290px; }
+
+#login #main #end { margin-top: 88px; width: 100%; }
+
+#login #main #end .end1 { text-align: center; }
+
+#login #main #end .end1 a { display: inline-block; padding: 0 10px; height: 16px; line-height: 16px; font-size: 12px; color: #000; text-decoration: none; }
+
+#login #main #end .end1 .end11 { border-right: 2px solid #666; }
+
+#login #main #end .end2 { text-align: center; height: 40px; line-height: 40px; }
