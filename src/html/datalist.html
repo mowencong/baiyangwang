@@ -5,6 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
     <title>列表页</title>
 </head>
 <body>
@@ -15,25 +22,24 @@
     <title>百洋健康-百洋健康 专业健康咨询电商平台</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/list.css" />
+    <link rel="stylesheet" href="../css/datalist.css" />
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../js/jquery-lxzoom/jquery.lxzoom.css" />
     <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/jquery-lxzoom/jquery.lxzoom.js"></script>
     <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script src="../js/list.js"></script>
-   <!--  <script src="../js/page.js"></script> -->
-    <!-- <script src="../js/listchuan.js"></script> -->
     <script src = "../js/common.js"></script>
-    <!-- <script src="../js/cookie.js"></script> -->
-    <script src="../js/list-cart.js"></script>
-</head>
-<!-- <script>
-$(function(){
-    $('.login').on('click',function(){
-    $('.form').css['left','-500px'];
-})
-})
+    <script src="../js/datalist.js"></script>
 
-</script> -->
+    <script>
+        jQuery(function($){
+            // 插件是否支持链式调用
+
+            $('.datal1').lxzoom({width:500,height:300});
+
+        });
+    </script>
+</head>
 <body>
     <!-- baiyangwang -->
     <div id="baiyang">
@@ -164,33 +170,33 @@ $(function(){
                             <!-- 三级导航 -->
                             <ul class="sanji">
                                 <li class="sanji01 sanji0">
-                                <a href="#" class="sanji00">微量元素</a>
+                                <a href="list.html" class="sanji00">微量元素</a>
                                  <div class="sanji1">
                                         <ul class="sanji11">
-                                            <li><a href="#">维生素C</a></li>
-                                            <li><a href="#">维生素D</a></li>
-                                            <li><a href="#">多种维生素</a></li>
-                                            <li><a href="#" >钙</a></li>
+                                            <li><a href="list.html">维生素C</a></li>
+                                            <li><a href="list.html">维生素D</a></li>
+                                            <li><a href="list.car.html">多种维生素</a></li>
+                                            <li><a href="list.html" >钙</a></li>
                                         </ul>
                                         <div class="sanji2"> 
-                                            <p class="fl"><a href="#">维生素</a><span> &gt;</span></p>
+                                            <p class="fl"><a href="list.html">维生素</a><span> &gt;</span></p>
                                             <ul class="sanji3">
-                                            <li><a href="#" class="sanji111">维生素B</a></li>
-                                                <li><a href="#" >维生素A</a></li>
-                                                <li><a href="#">维生素B</a></li>
-                                                <li><a href="#">维生素C</a></li>
-                                                <li><a href="#">维生素D</a></li>
-                                                <li><a href="#">维生素E</a></li>
-                                                <li><a href="#">维生素K</a></li>
-                                                <li><a href="#" class="sanji55">多种维生素</a></li>
+                                            <li><a href="list.html" class="sanji111">维生素B</a></li>
+                                                <li><a href="list.html" >维生素A</a></li>
+                                                <li><a href="list.html">维生素B</a></li>
+                                                <li><a href="list.html">维生素C</a></li>
+                                                <li><a href="list.html">维生素D</a></li>
+                                                <li><a href="list.html">维生素E</a></li>
+                                                <li><a href="list.html">维生素K</a></li>
+                                                <li><a href="list.html" class="sanji55">多种维生素</a></li>
                                             </ul>
                                         </div>
                                         <div class="sanji4">
-                                            <p class="fl"><a href="#">矿物质</a><span> &gt;</span></p>
+                                            <p class="fl"><a href="list.html">矿物质</a><span> &gt;</span></p>
                                             <ul class="sanji5">
-                                                <li><a href="#">钙</a></li>
-                                                <li><a href="#">铁</a></li>
-                                                <li><a href="#">锌</a></li>
+                                                <li><a href="list.html">钙</a></li>
+                                                <li><a href="list.html">铁</a></li>
+                                                <li><a href="list.html">锌</a></li>
                                             </ul>
                                         </div>
                                         
@@ -201,7 +207,7 @@ $(function(){
 
                                 </li>
                                 <li class="sanji02 sanji0">
-                                <a href="#" class="sanji00">营养补充</a>
+                                <a href="list.html" class="sanji00">营养补充</a>
 
 
 
@@ -209,14 +215,14 @@ $(function(){
 
 
                                 </li>
-                                <li class="sanji03 sanji0"><a href="#" class="sanji00">健身运动</a></li>
-                                <li class="sanji04 sanji0"><a href="#" class="sanji00">美妆/个护</a></li>
-                                <li class="sanji05 sanji0"><a href="#" class="sanji00">妈咪宝贝</a></li>
-                                <li class="sanji06 sanji0"><a href="#" class="sanji00">家居/数码</a></li>
-                                <li class="sanji07 sanji0"><a href="#" class="sanji00">中西药品</a></li>
-                                <li class="sanji08 sanji0"><a href="#" class="sanji00">滋补保健</a></li>
-                                <li class="sanji09 sanji0"><a href="#" class="sanji00">性福生活</a></li>
-                                <li class="sanji10 sanji0"><a href="#" class="sanji00">环球美食</a></li>
+                                <li class="sanji03 sanji0"><a href="list.html" class="sanji00">健身运动</a></li>
+                                <li class="sanji04 sanji0"><a href="list.html" class="sanji00">美妆/个护</a></li>
+                                <li class="sanji05 sanji0"><a href="list.html" class="sanji00">妈咪宝贝</a></li>
+                                <li class="sanji06 sanji0"><a href="list.html" class="sanji00">家居/数码</a></li>
+                                <li class="sanji07 sanji0"><a href="list.html" class="sanji00">中西药品</a></li>
+                                <li class="sanji08 sanji0"><a href="list.html" class="sanji00">滋补保健</a></li>
+                                <li class="sanji09 sanji0"><a href="list.html" class="sanji00">性福生活</a></li>
+                                <li class="sanji10 sanji0"><a href="list.html" class="sanji00">环球美食</a></li>
                             </ul>
 
 
@@ -224,114 +230,153 @@ $(function(){
                         </div>
                         <ul class="navlist fr">
                             <li><a href="../index.html" class="index">首页</a></li>
-                            <li><a href="#">钙铁锌</a></li>
-                            <li><a href="#">营养补充</a></li>
-                            <li><a href="#">美妆个护</a></li>
-                            <li ><a href="#" class="last">妈咪宝贝</a></li>
+                            <li><a href="list.html">钙铁锌</a></li>
+                            <li><a href="list.html">营养补充</a></li>
+                            <li><a href="list.html">美妆个护</a></li>
+                            <li ><a href="list.html" class="last">妈咪宝贝</a></li>
                     </ul>
                     </div>
                     
                 </div>
-                <div class="page1"></div>
+                <div class="page"></div>
             </div>
-
-            <!-- //banner -->
-            <div id="banner">
-                <div class="container">
-                    <img src="../img/05814333522460562.jpg"/>
-                </div>
-            </div>
-            
-            <!-- //层级导航 -->
             <div id="main-nav">
                 <div class="container">
                         <ul>
                             <li><i class="glyphicon glyphicon-home"></i><a href="../index.html">首页</a> &gt;</li>
 
-                            <li>微量元素</li>
+                            <li><a href="list.html">微量元素</a> &gt;</li>
+                            <li><a href="list.html">维生素</a> &gt;</li>
+                            <li><a href="list.html">维生素E</a> &gt;</li>
+                            <li class="tl"></li>
                         </ul>
                 </div>
             </div>
-            <!-- //main-nav2 -->
-            <div id="main-nav2">
+            <div class="datalist">
                 <div class="container">
-                    <div class="fs">
-                        <div class="fs1">
-                        排序方式：
-                        <ul>
-                            <li class="selected"><a href="#">默认</a></li>
-                            <li><a href="javascript:void(0)">销量<i class="glyphicon glyphicon-arrow-down"></i></a></li>
-                            <li class="price1"><a href="javascript:void(0)">价格<i class="glyphicon glyphicon-arrow-up"></i></a></li>
-                            <li class="price2"><a href="javascript:void(0)">价格<i class="glyphicon glyphicon-arrow-down"></i></a></li>
-                        </ul>
-                            
-                            
-                            
-                            
+                    <div class="datal fl">
+                        <div class="datal1">
+                            <!-- 大图 -->
+                            <img src="" class="big" data-big=""/ >
                         </div>
-                       
-                        <div class="pt">
-                            <ul>
-                                <li><a href=""><input type="checkbox"/>平台自营</a></li>
-                                <li><a href=""><input type="checkbox"/>赠品</a></li>
-                                <li><a href=""><input type="checkbox"/>CFDA认证</a></li>
-                                <dl>
-                                <li><a href=""><input type="checkbox"/>30天无忧售后</a></li>
-                                <li><a href=""><input type="checkbox"/>7天无忧售后</a></li>
-                                <li><a href=""><input type="checkbox"/>跨境商品</a></li>
-                                <li><a href=""><input type="checkbox"/>药品</a></li></dl>
-                            </ul>
+                        <div class="mining">
+                            <img src="" class="min" style="border:1px solid list.htmlEF3C79"/>
+                            <!-- 小图 -->
+                        </div>
+                        <div class="shar">
+                            <a href="list.html" class="shars">分享(0)</a>
+                            <a href="#" class="sc">收藏(0)</a>
+                            <a href="#"><input type="checkbox">加入对比</a>
+                        </div>
+                    </div>
+                    <div class="datar fr">
+                        <div class="datar1">
+                            <p class="pp"></p>
+                            <p class="bt"></p>
+                        </div>
+                        <div class="datar2">
+                            <p><span>市场价</span><del class="marketprice"></del></p>
+                            <p><span>商场价</span><span class="shopprice"></span></p>
+                            <p><span>商品评分</span><img src="../img/美国GNC健安喜 维生素E软胶囊100粒 - 百洋健康_r2_c2.png" alt="" /><a href="#">共有0条评价</a><span>(销量:0)</span></p>
+                        </div>
+                        <div class="datar3">
+                            <div class="datar31">
+                                <span>运费</span>
+                                <span>BYHN保税仓</span>
+                                <sapn>至</sapn>
+                                <!-- <select><i>&or;</i><option value="" selected="selected">请选择地区</option></select> -->
+                                <input type="text" value="请选择地区&or;"/>
+                                <span class="have"><!--有货--></span>
+                                <span class="yf"><!--免运费--></span>
+                            </div>
+                            <div class="datar32">
+                                <p><span>税费：</span><span class="ms"><!--免税--></span></p>
+                            </div>
+                            <div class="datar33">
+                                <a href="javascript:void(0)" title=""><input type="text" id="num" value="1" /><button class="glyphicon glyphicon-triangle-top addnum"></button ><button class="glyphicon glyphicon-triangle-bottom jnum"></button></a>
+                                <p class="addcar"><i class="glyphicon glyphicon-shopping-cart"></i><a href="javascript:void(0)">加入购物车</a></p>
+                                <p class="buy"><a href="">立即购买</a></p>
+                                <div class="x"></div>
+                            </div>
+                            <div class="datar34">
+                                <p><span>服务承诺：</span>
+                                    <span><img src="../img/7day_60.gif" alt="" />CFDA认证</span>
+                                    <span><img src="../img/psbf_60.gif" alt="" />无忧售后</span>
+                                    <span><img src="../img/jswl_60.gif" alt="" />跨境商品</span>
+                                </p>
+                            </div>
                         </div>
 
+                        
+                    </div>
 
-                         <div class="input-group group" >
-                            <div class="input-group-btn mainnav_l">
-                                <div type="text" class="form-control "data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:0;top:3px;">
-                                    请选择<span class="caret ca" style="margin-left:50px;"></span>
+                    <div class="datar4 fl">
+                            <div class="datar4-l fl">
+                                <div class="datar4-l1"><span>百洋健康跨境自营店</span><img src="../img/kefu.png" alt="" /></div>
+                                <div class="datar4-l2"><a href="javascript:void(0)">进店逛逛</a><a href="javascript:void(0)">关注店铺</a></div>
+                                <div class="datar4-l3">
+                                    <p class="xg">相关分类</p>
+                                    <ul>
+                                        <li><a href="javascript.volid(0)">维生素A</a></li>
+                                        <li><a href="javascript.volid(0)">维生素B</a></li>
+                                        <li><a href="javascript.volid(0)">维生素C</a></li>
+                                        <li><a href="javascript.volid(0)">维生素D</a></li>
+                                        <li><a href="javascript.volid(0)">维生素E</a></li>
+                                        <li><a href="javascript.volid(0)">维生素K</a></li>
+                                        <li><a href="javascript.volid(0)">多种维生素</a></li>
+                                    </ul>
                                 </div>
-                                <!-- dropdown-menu -->
-                                <ul class="dropdown-menu menu mainmenu" style="top:94%;border-radius:0;">
-                                    <li><a href="#">请选择</a></li>
-                                    <li><a href="#">一般货易</a></li>
-                                    <li><a href="#">保税备货</a></li>
-                                    <li><a href="#">跨境直邮</a></li>
-
-                                </ul>
-                                </div><!-- input-group-btn -->
-                    </div>
-
-                    <!-- <div class="shopcity">
-                        商品所在地:
-                        <div class="city">
-                            <div class="holder">
-                                <em nc_type="area_name">不限地区</em>
                             </div>
-                            <div class="select">
-                                <a nc_type="area_name">不限地区</a>
                             </div>
-                        </div>
-                    </div> -->
-
+                            <div class="datar5 fr">
+                                
+                                <div class="datar51">
+                                    <ul class="fl">
+                                        <li>商品详情</li>
+                                        <li>商品评价</li>
+                                        <li>购买咨询</li>
+                                    </ul>
+                                    <p class="fr">手机购买<img src="../img/877779040.png" alt="" /></p>
+                                </div>
+                                <div class="datar52">
+                                    <span class="hh"></span><span class="pp1"></span>
+                                </div>
+                                <div class="datar53">
+                                    <img src="../img/2_05878296992837882_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296994094938_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296994522362_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296994576943_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296994585837_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296995071967_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296997544292_1280.jpg" alt="" />
+                                    <img src="../img/2_05878296998458519_1280.jpg" alt="" />
+                                    <img src="../img/2_05878297000798475_1280.jpg" alt="" />
+                                    <img src="../img/2_05878297001029532_1280.jpg" alt="" />
+                                    <img src="../img/2_05878297003838976_1280.jpg" alt="" />
+                                    <img src="../img/2_05878297005098282_1280.jpg" alt="" />
+                                    <img src="../img/2_05882561917948598_1280.jpg" alt="" />
+                                    <img src="../img/2_05882561918412728_1280.jpg" alt="" />
+                                    <img src="../img/2_05882561919041266_1280.jpg" alt="" />
+                                </div>
+                            </div>
+<!--                         
+                        </div> -->
                 </div>
-                <div id="main-list">
-                    <ul class="datalist ">
-                        
-                    </ul>
-                    <div class="page">
-                        
-                    </div>
-                
             </div>
 
-            </div>
-            </div>
-
-            
 
 
 
 
-        <!-- bottom -->
+
+
+
+
+
+
+
+
+             <!-- bottom -->
             <div id="bottom">
                 <div class="container">
                     <div class="bimg2"><img src="../img/zhaoshang09_03.jpg"/></div>
@@ -419,13 +464,13 @@ $(function(){
     <div id="side">
         <div class="pos">
         <div class="login">
-        <a href="javascript:void(0)">
+        <a href="#">
             <img src="../img/05755058785008341.jpg" alt="" />
         </a>
         <div class="details" id="details">会员登录</div>
         <div class="form">
             <div class="log">
-            <span style="position:absolute;right:20px;top:0px;" class="close">&times;</span>
+            <span style="position:absolute;right:20px;top:0px;">&times;</span>
                 <label for="username">登录名</label><br>
                 <input type="text" id="username" name="username"/>
                 
@@ -473,10 +518,7 @@ $(function(){
         </div>
         
 
-        <div class="cart_list">
-            <p class="sl"><span class="fl" style="font-size:24px">我的购物车</span><span class="fr"><i class="glyphicon glyphicon-remove-sign gb"></i></span></p>
-            <ul></ul>
-        </div>
+
 
 
 
@@ -492,9 +534,6 @@ $(function(){
     document.addEventListener('DOMContentLoaded',()=>{
                 
                 let toTop = document.querySelector('.back');
-                let login = document.querySelector('.login');
-                let close = document.querySelector('.close');
-                let form = document.querySelector('.form')
                 // 点击返回顶部
             toTop.onclick = ()=>{
                 let timer = setInterval(()=>{
@@ -509,89 +548,7 @@ $(function(){
                     }
                 },30)
             }
-            login.onclick = ()=>{
-                if(form.style.display = 'none'){
-                    form.style.display = 'block';
-                }
-               else if(form.style.display = 'block'){
-                form.style.display = 'none';
-               }
-
-
-            }
-            close.onclick = ()=>{
-                form.style.display = 'none';
-            }
-
-
-
-        // let datalist = document.querySelector('.datalist');
-
-        // let items = datalist.children;
-
-        // // let timer
-
-        // // 遍历实现鼠标移入移出效果
-        // for(var i=0;i<items.length;i++){
-        //     items[i].onmouseover = function(){
-        //         clearInterval(this.timer);
-
-        //         // 获取对应a标签
-        //         let dh = this.children[1];
-
-        //         // 目标值
-        //         let target = 5;
-
-        //         this.timer = setInterval(()=>{
-        //             // 获取当前值
-        //             let top = link.offsetTop;
-
-        //             // 计算缓冲速度
-        //             let speed = Math.floor((target - top)/10);
-
-        //             top += speed;
-
-        //             if(top <= target){
-        //                 clearInterval(this.timer);
-
-        //                 // 重置目标值
-        //                 top = target;
-        //             }
-
-        //             link.style.top = top + 'px';
-        //         },30)
-        //     }
-
-
-        //     items[i].onmouseout = function(){
-        //         clearInterval(this.timer);
-
-        //         // 获取对应a标签
-        //         let link = this.children[1];
-
-        //         // 目标值
-        //         let target = 230;
-
-        //         this.timer = setInterval(()=>{
-        //             // 获取当前值
-        //             let top = link.offsetTop;
-
-        //             // 计算缓冲速度
-        //             let speed = Math.ceil((target - top)/10);
-
-        //             top += speed;
-
-        //             if(top >= target){
-        //                 clearInterval(this.timer);
-
-        //                 // 重置目标值
-        //                 top = target;
-        //             }
-
-        //             link.style.top = top + 'px';
-        //         },30)
-            // }
-        // }
-     });
+        })
 </script>
+</body>
 </html>

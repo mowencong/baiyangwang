@@ -2,7 +2,7 @@
 * @Author: mowencong
 * @Date:   2018-08-17 20:28:46
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-08-22 15:34:12
+* @Last Modified time: 2018-08-27 16:24:53
 */
 // document.addEventListener('DOMContentLoaded',()=>{
             //let status = [200,304];
@@ -27,11 +27,71 @@
             xhr.send();
             }
             */
-                jQuery($=>{
+        jQuery($=>{
                     $.ajax({
                         url:'./api/index.php',
                         dataType:'json',
                         success:function(data){
+                        var goods = $('.mains');
+                          var goodlist = Cookie.get('goodlist');
+                          if(goodlist===''){
+                              goodlist = []
+                          }else{
+                              goodlist = JSON.parse(goodlist);
+                          }
+                      goods.on('click',function(e){
+                          e = e || window.event;
+                          var target = e.target || e.srcElement;
+                          if(target.parentNode.className === 'button'){
+                              // var currentLi = $('.sp');
+                              var currentLi = (target.parentNode.parentNode);
+                              var guid = currentLi.getAttribute('data-id');
+                              // var guid =data.id
+                              console.log(guid)
+                              var currentGoods = goodlist.filter(function(g){
+                                  return g.guid === guid;
+                              });
+                              if(currentGoods.length>0){
+                                  currentGoods[0].qty++;
+                              }else{
+                    var goods= {
+                    guid:guid,
+                    imgurl:data.url,
+                    name:data.decoration,
+                    price:data.price,
+                    // gg:val.gg,
+                    qty:1
+                }
+                goodlist.push(goods);
+            }
+            Cookie.set('goodlist',JSON.stringify(goodlist));
+        }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             let urls = data.slice(0,4);
                             let urls1 = data.slice(4,9);
                             let urls2 = data.slice(9,14);
@@ -49,33 +109,33 @@
                         }).join('');
 
                         $('.main-list1')[0].innerHTML = urls1.map(item=>{
-                            return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
-                            <p><a href="#">${item.decoration}</a></p>
+                            return `<li data-id="${item.id}" class="datalist111">
+                            <a href="./html/datalist.html?imgurlId=${item.id}"><img src = "${item.url}"/></a>
+                            <p><a href="./html/datalist.html?imgurlId=${item.id}">${item.decoration}</a></p>
                             <p class="price">${item.price}</p>
-                            <div class="buy">立即购买</div>
+                            <div class="buy button oragn"><a href="./html/datalist.html?imgurlId=${item.id}">立即购买<a/></div>
                             </li>
                             
                             `
                         }).join('');
 
                         $('.main-list2')[0].innerHTML = urls1.map(item=>{
-                            return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
-                            <p><a href="#">${item.decoration}</a></p>
+                            return `<li data-id="${item.id}" class="datalist111">
+                            <a href="./html/datalist.html?imgurlId=${item.id}"><img src = "${item.url}"/></a>
+                            <p><a href="./html/datalist.html?imgurlId=${item.id}">${item.decoration}</a></p>
                             <p class="price">${item.price}</p>
-                            <div class="buy">立即购买</div>
+                            <div class="buy button oragn"><a href="./html/datalist.html?imgurlId=${item.id}">立即购买<a/></div>
                             </li>
                             
                             `
                         }).join('');
 
                         $('.main-list3')[0].innerHTML = urls1.map(item=>{
-                            return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
-                            <p><a href="#">${item.decoration}</a></p>
+                            return `<li data-id="${item.id}" class="datalist111">
+                            <a href="./html/datalist.html?imgurlId=${item.id}"><img src = "${item.url}"/></a>
+                            <p><a href="./html/datalist.html?imgurlId=${item.id}">${item.decoration}</a></p>
                             <p class="price">${item.price}</p>
-                            <div class="buy">立即购买</div>
+                            <div class="buy button oragn"><a href="./html/datalist.html?imgurlId=${item.id}">立即购买<a/></div>
                             </li>
                             
                             `
@@ -83,7 +143,7 @@
 
                         $('.main3-list-list')[0].innerHTML = urls2.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
@@ -91,7 +151,7 @@
 
                         $('.main-list4')[0].innerHTML = urls3.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
@@ -99,7 +159,7 @@
 
                         $('.main-list5')[0].innerHTML = urls4.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
@@ -107,7 +167,7 @@
 
                         $('.main-list6')[0].innerHTML = urls5.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
@@ -115,7 +175,7 @@
 
                         $('.main-list7')[0].innerHTML = urls6.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
@@ -123,21 +183,68 @@
 
                         $('.main-list8')[0].innerHTML = urls7.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
                             </li>
                             
                             `
                         }).join('');
-                         $('.main-list9')[0].innerHTML = urls8.map(item=>{
+                        $('.main-list9')[0].innerHTML = urls8.map(item=>{
                             return `<li>
-                            <a href="#"><img src = "${item.url}"/></a>
-                            <p><a href="#">${item.decoration}</a></p>
+                            <a href="./html/list.html"><img src = "${item.url}"/></a>
+                            <p><a href="./html/list.html">${item.decoration}</a></p>
                             <p class="price">${item.price}</p>
                             </li>
                             
                             `
                         }).join('');
+
+
+
+    //                     var offset = $("#end").offset();  //结束的地方的元素
+    //                     console.log()
+    //                     console.log(offset);
+    //                     console.log($('.price'));
+                             
+    //                     $(".buy").on("click",function(event){   //是$(".addcar")这个元素点击促发的 开始动画的位置就是这个元素的位置为起点
+
+    //                         var buy = $(this);
+    //                         var img = buy.parent().find('img').attr('src');
+    //                         console.log(img);
+    //                         var flyer = $('<img class="u-flyer" src="'+img+'">');
+    //                         console.log(flyer);
+    //                         flyer.fly({
+    //                             start: {
+    //                                 left: event.pageX,
+    //                                 top: event.pageY
+    //                             },
+    //                                         end: {
+    //                         left: offset.left+10,
+    //                         top: offset.top+10,
+    //                         width: 0,
+    //                         height: 0
+    //                     },
+    //         onEnd: function(){
+    //             this.destory();
+    //         }
+    //     });
+    // });
+
+
+
                         }
+
+                    });
+                    $('.car').on('click',function(){
+                        if($('.cart_list').css('display','none')){
+                            $('.cart_list').css('display','block');
+                        }else if($('.cart_list').css('display','block')){
+                            $('.cart_list').css('display','no');
+                        }
+                    })
+                    $('.gb').on('click',function(){
+                        // if($('.cart_list').css.display = 'block'){
+                            $('.cart_list').css('display','none');
+                        // }
                     })
 
                 })

@@ -108,7 +108,7 @@
                     // }
                     .success{border:1px solid #58bc58;}
                     .error{border:1px solid #f00;}
-                    .code{
+                    .codes{
                         position:relative;
                         margin-top:15px;
                         #udcode{
@@ -148,6 +148,7 @@
 
                         span{
                             margin-left:160px;
+                            a{color:#f00;}
                         }
                     }
                     .lg{

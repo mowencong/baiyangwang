@@ -1,0 +1,102 @@
+@charset "UTF-8";
+#baiyang { width: 100%; min-width: 1230px; }
+
+#baiyang #top { width: 100%; background: #FAFAFA; }
+
+#baiyang #top .top_l { height: 30px; }
+
+#baiyang #top .top_l .wel { height: 30px; line-height: 30px; font-size: 14px; }
+
+#baiyang #top .top_l .wel a { color: #000; padding: 0 2px; }
+
+#baiyang #top .top_r { height: 30px; }
+
+#baiyang #top .top_r .top_r_list { height: 30px; }
+
+#baiyang #top .top_r .top_r_list li { z-index: 999; }
+
+#baiyang #top .top_r .top_r_list .list0 { position: relative; float: left; margin-left: 18px; font-size: 14px; line-height: 30px; color: #777777; }
+
+#baiyang #top .top_r .top_r_list .list0 .font { display: inline-block; margin-left: 5px; color: #777777; font-weight: normal; }
+
+#baiyang #top .top_r .top_r_list .list0 .li-list { z-index: 999; position: position; }
+
+#baiyang #top .top_r .top_r_list .list0 .li-list dl { display: none; }
+
+#baiyang #top .top_r .top_r_list .list0 .li-list dl dt { height: 30px; line-height: 30px; text-align: center; cursor: pointer; z-index: 999; }
+
+#baiyang #top .top_r .top_r_list .list0 .li-list dl dt:hover { background: #FAFAFA; }
+
+#baiyang #top .top_r .top_r_list .list0 .li-list dl a { color: #777; text-decoration: none; }
+
+#baiyang #top .top_r .top_r_list .list0:hover { box-shadow: 0 0 1px 0; background: #fff; }
+
+#baiyang #top .top_r .top_r_list .list0:hover dl { display: block; }
+
+#baiyang #top .top_r .top_r_list .list0:hover .font { transform: rotate(180deg); transition-duration: 1s; }
+
+#baiyang #footer { width: 100%; margin-top: 35px; height: 250px; border-bottom: 1px solid #ccc; }
+
+#baiyang #footer .footer-l { width: 260px; }
+
+#baiyang #footer .footer-l h1 { width: 220px; height: 60px; background: url(../img/logo.png) no-repeat; text-indent: -10000px; }
+
+#baiyang #footer .footer-l .gz { margin-top: 20px; margin-left: 20px; }
+
+#baiyang #footer .footer-l .gz span { font-size: 16px; margin-right: 10px; }
+
+#baiyang #footer .footer-l .gz a { margin-right: 10px; }
+
+#baiyang #footer .footer-l .gz .wb { margin-top: 10px; }
+
+#baiyang #footer .footer-l .gz .wb img { width: 100px; height: 100px; }
+
+#baiyang #footer .footer-r { margin-top: 30px; width: 260px; height: 150px; }
+
+#baiyang #footer .footer-r .app { margin-left: 20px; }
+
+#baiyang #footer .footer-r .tp { width: 120px; height: 120px; line-height: 110px; text-align: center; border: 1px solid #ccc; }
+
+#baiyang #footer .footer-r .wz { width: 120px; text-align: center; font-size: 14px; }
+
+#baiyang #end { margin-top: 25px; height: 150px; }
+
+#baiyang #end .end1 { text-align: center; }
+
+#baiyang #end .end1 a { display: inline-block; padding: 0 10px; height: 16px; line-height: 16px; font-size: 16px; color: #000; text-decoration: none; }
+
+#baiyang #end .end1 .end11 { border-right: 2px solid #666; }
+
+#baiyang #end .end2 { text-align: center; height: 40px; line-height: 40px; }
+
+#baiyang #end .end3 { text-align: center; margin-bottom: 50px; }
+
+#baiyang .container { /*内容、版心 提取 */ width: 1230px; margin: 0 auto; }
+
+#baiyang a:hover { text-decoration: none; }
+
+#baiyang #header { width: 100%; height: 100px; line-height: 100px; border-bottom: 1px solid #ccc; }
+
+#baiyang #header .header-l h1 { width: 220px; background: url(../img/logo.png) no-repeat; text-indent: -10000px; height: 60px; margin: 20px 0; }
+
+#baiyang #header .lc { font-size: 0; word-spacing: -1em; width: 640px; height: 70px; margin: 15px 0; }
+
+#baiyang #header .lc li { font-size: 12px; vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; width: 25%; height: 70px; position: relative; z-index: 1; }
+
+#baiyang #header .lc li i { font-size: 30px; color: #ccc; margin-left: -15px; position: absolute; text-align: center; z-index: 2; top: 0; left: 50%; }
+
+#baiyang #header .lc li p { text-align: center; line-height: 24px; width: 100%; height: 24px; position: absolute; z-index: 2; left: 0; bottom: 0; overflow: hidden; }
+
+#baiyang #header .lc li sub { background-color: #FFF; width: 5px; height: 5px; margin-left: -3px; border: solid 1px #CCC; border-radius: 4px; position: absolute; z-index: 2; top: 32px; left: 50%; }
+
+#baiyang #header .lc li .hr { background-color: #DDD; width: 100%; height: 1px; border: none 0; position: absolute; z-index: 1; top: 34px; left: 0; }
+
+#baiyang #header .lc .current { color: #EF3C79; }
+
+#baiyang #header .lc .current i { color: #EF3C79; }
+
+#baiyang #header .lc .current p { color: #EF3C79; }
+
+#baiyang .mycart { height: 80px; border-bottom: 1px solid #ccc; }
+
+#baiyang .mycart p { color: #AAAAAA; font-size: 14px; }

@@ -2,7 +2,7 @@
 * @Author: Mowencong
 * @Date:   2018-08-22 20:06:32
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-08-22 20:24:08
+* @Last Modified time: 2018-08-25 14:47:42
 */
 
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     ts.style.display = 'block';
                     return false;
                     }
+       
         let xhr = new XMLHttpRequest();
         xhr.onload = () =>{
             if(status.indexOf(xhr.status)>=0){
@@ -53,7 +54,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         xhr.open('get','../api/checkname.php?username='+_username,true);
         xhr.send();
     }
-    
+    password.onblur = ()=>{
+        let _password = password.value
+         if(!/^\S{6,20}$/.test(_password)){
+            alert('密码不能有空格');
+            return false;
+        }
+    }
 
     // 注册操作
     register.onclick = function(e){
@@ -79,7 +86,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 alert('帐号密码不能为空');
                 username.focus();
                 password.focus();
-                code.focus();
+                // code.focus();
                 return false;
             }
     if(_code === ''){
@@ -88,9 +95,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
             
    if(_username!='' && _password!='' && code != ''){
-        alert('注册成功');
+        return true;
     }
     if(xhr.responseText === 'success'){
+        
+        location.href = "login.html";
         console.log(xhr.responseText);
         
     }

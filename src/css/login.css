@@ -42,21 +42,23 @@
 
 #login #main .dl-main .main-dl .form .error { border: 1px solid #f00; }
 
-#login #main .dl-main .main-dl .form .code { position: relative; margin-top: 15px; }
+#login #main .dl-main .main-dl .form .codes { position: relative; margin-top: 15px; }
 
-#login #main .dl-main .main-dl .form .code #udcode { position: absolute; width: 100px; height: 55px; display: block; background: #f00; right: 0; top: -2px; text-decoration: none; color: #fff; text-align: center; line-height: 55px; font-size: 20px; }
+#login #main .dl-main .main-dl .form .codes #udcode { position: absolute; width: 100px; height: 55px; display: block; background: #f00; right: 0; top: -2px; text-decoration: none; color: #fff; text-align: center; line-height: 55px; font-size: 20px; }
 
-#login #main .dl-main .main-dl .form .code #udcode .huan { position: absolute; top: 0; border: 1px solid #ccc; width: 100px; height: 55px; display: block; opacity: 0.8; font-size: 12px; color: #ccc; }
+#login #main .dl-main .main-dl .form .codes #udcode .huan { position: absolute; top: 0; border: 1px solid #ccc; width: 100px; height: 55px; display: block; opacity: 0.8; font-size: 12px; color: #ccc; }
 
-#login #main .dl-main .main-dl .form .code #udcode:hover .huan { display: block; }
+#login #main .dl-main .main-dl .form .codes #udcode:hover .huan { display: block; }
 
-#login #main .dl-main .main-dl .form .code .fault { position: absolute; left: 210px; color: #f00; line-height: 50px; display: none; }
+#login #main .dl-main .main-dl .form .codes .fault { position: absolute; left: 210px; color: #f00; line-height: 50px; display: none; }
 
-#login #main .dl-main .main-dl .form .code .right { position: absolute; left: 210px; color: #58bc58; line-height: 50px; display: none; }
+#login #main .dl-main .main-dl .form .codes .right { position: absolute; left: 210px; color: #58bc58; line-height: 50px; display: none; }
 
 #login #main .dl-main .main-dl .form .check { border: none; }
 
 #login #main .dl-main .main-dl .form .check span { margin-left: 160px; }
+
+#login #main .dl-main .main-dl .form .check span a { color: #f00; }
 
 #login #main .dl-main .main-dl .form .lg { border: none; }
 
